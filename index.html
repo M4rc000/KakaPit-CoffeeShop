@@ -25,7 +25,6 @@
   <script src="jquery.easing.min.js"></script>
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
         <div class="container">
           <a class="navbar-brand fs-2" style="font-family: Euphoria Script, cursive;">Kopi Kaka Pit</a>
@@ -76,7 +75,7 @@
         </a> 
       </div>
     
-    <div class="container-tentang text-center" id="tentang" style="background-color: rgb(204, 204, 204) !important">
+    <div class="container-tentang text-center" id="tentang">
         <div class="title-tentang fs-4 pt-5 mb-5" style="font-family: 'Vujahday Script', cursive; color: black;" >TENTANG</div>
         <div class="container text-center Hero mt-5">
             <img src="./src/Images/Hero.png" alt="">
@@ -179,11 +178,8 @@
                   <a target="_blank" href=""><div class="whatsapp me-3">
                     <img src="./src/Icons/icons8_whatsapp.ico" alt="">
                   </div></a>
-                  <!-- <a target="_blank" href=""><div class="telegram me-3">
-                    <img src="./src/Icons/icons8_telegram_app.ico" alt="">
-                  </div></a> -->
                 </div>
-                <div style="margin-top: 2.5rem !important; font-family: 'Lora', serif; font-size: 14px; color: rgb(223, 223, 223);"><span>Copyright &copy; Kopi Kaka Pit 2022.</span>
+                <div class="copyright" style="margin-top: 2.5rem !important; font-family: 'Lora', serif; font-size: 14px; color: rgb(223, 223, 223);"><span>Copyright &copy; Kopi Kaka Pit 2022.</span>
                 </div>
             </div>
             <div class="col-7 text-center pt-5">
@@ -193,11 +189,11 @@
                 <div class="container">
                   <div class="row justify-content-center text-center">
                     <div class="col-5">
-                      <div  class="embed-responsive embed-responsive-16by9">
+                      <div  class="embed-responsive map embed-responsive-16by9">
                         <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0891408338352!2d107.09555431413797!3d-6.251984762953028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698f487a14cca3%3A0xef7e58ad340b58fa!2sRegina%20Shop!5e0!3m2!1sid!2sid!4v1661754227634!5m2!1sid!2sid" width="350" height="250" style="border: 1;" allowfullscreen loading="lazy" allow="accelerometer; autoplay; gyroscope; picture-in-picture;" referrerpolicy="no-referrer-when-downgrade"></iframe>
                       </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6" id="qrcode">
                       <div class="cover-qrcode"><img src="./src/Images/QRLocation.png" title="QR Location Kopi Kaka Pit" alt="">
                       </div>
                     </div>

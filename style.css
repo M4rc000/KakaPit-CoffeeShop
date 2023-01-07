@@ -2,7 +2,7 @@ body{
     background-image: url(./src/Images/Bg-Hero.jpg);
     background-repeat: no-repeat;
     overflow-y: scroll;
-    height: 2000px;
+    /* height: 2000px; */
     overflow-x: hidden;
 }
   
@@ -80,16 +80,17 @@ body{
   
 .container-tentang{
     margin-top: 9rem;
-}
-
-.Hero img{
+    background-color: rgb(248, 248, 248);
+  }
+  
+  .Hero img{
     text-align: center;
     width: 200px;
     height: 307px;
 }
 .tentang img{
-    width: 232px;
-    height: 391px;
+  width: 232px;
+  height: 391px;
 }
 
 #tentang .row{
@@ -104,7 +105,7 @@ body{
 
 .container-produk{
   margin-top: 0rem;
-  background-color: rgb(204, 204, 204);
+  background-color: rgb(248, 248, 248);
   height: 950px;
 }
 
@@ -183,6 +184,11 @@ footer{
 }
 
 @media only screen and (max-width: 991px){
+
+  html {
+    overflow-x: hidden !important;
+  }
+
   .container-produk{
     height: 900px !important;
   }
@@ -210,10 +216,19 @@ footer{
 
 @media only screen and (max-width: 467px){
 
+  html {
+    overflow-x: hidden !important;
+    height: 900px !important;
+}
+
+  .container-tentang{
+    width: 467px !important;
+    margin-top: 283px !important;
+  }
+
   .cover-tentang-desc{
     padding-left: 1.5rem !important;
   }
-
 
   .box-2 p {
     font-size: 100px;
@@ -239,18 +254,18 @@ footer{
   }
 
   .container-nilai{
-    height: 800px !important;
+    height: 680px !important;
   }
 
   footer{
     background-color: #272727;
-    height: 1300px !important;
+    height: 1130px !important;
     color: white;
   }
 
   footer .col-3{
     display: grid;
-    grid-template-columns: repeat(1,90px);
+    grid-template-columns: repeat(1,100px);
   }
 
   footer .col-7{
@@ -267,12 +282,34 @@ footer{
   }
 
   footer .col-6{
-    margin-top: 5rem !important;
-    margin-left: 9rem !important;
+    margin-top: -1rem !important;
+    margin-left:  12rem !important;
     display: grid;
     position: absolute;
     grid-template-columns: repeat(1,200px);
   }
+
+  footer .social-media{
+    display: inline !important;
+    width: 200px;
+    margin-left: -3rem;
+  }
+
+  footer .copyright{
+    display: inline !important;
+    width: 235px;
+    margin-left: -3.8rem;
+  }
+
+  footer .isi-location{
+    width: 250px;
+    margin-left: -1.7rem;
+  }
+
+  footer .map{
+    margin-left: .8rem;
+  }
+
 }
 
 #navbar .navbar-nav li > a {
